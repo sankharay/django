@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+I AM HERE contact us page {{pagename}}
+
+<form action='add' method='post'>
+
+    {% csrf_token %}
+
+    1st number <input name='value1' />
+    2nd number <input name='value2' />
+    <input type='submit' value='add'>
+
+</form>
+
+{% endblock  %}
